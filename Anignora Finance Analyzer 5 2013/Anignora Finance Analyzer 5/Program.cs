@@ -2,7 +2,6 @@
 using System.IO;
 using System.Threading;
 using System.Windows.Forms;
-using adimus.ertus.Logger;
 using AnignoraCommonAndHelpers.Helpers;
 using AnignoraFinanceAnalyzer5.UI.Forms;
 using AnignoraIO;
@@ -28,7 +27,7 @@ namespace AnignoraFinanceAnalyzer5
             
             EventHalper.RegisterUnhandledExceptionHandlers(OnDomainExceptionAction,OnThreadExceptionAction, p_args => { });
 
-            Logging.InitFromConfigFile(); 
+            //Logging.InitFromConfigFile(); 
             s_logger.Info("Application Started");
 
             //Starting UI
